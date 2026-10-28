@@ -1,30 +1,45 @@
-# React + TypeScript + Vite
+# @abmrifat1/js-ui-component-library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A reusable and customizable React Button component library.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install @abmrifat1/js-ui-component-library
+```
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
+## Usage
+---
+### Button
 
 ```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
+import { Button } from '@abmrifat1/js-ui-component-library';
+
+function App() {
+  return (
+    <Button 
+      color="blue" 
+      size="small" 
+      outline="primary" 
+      align="center"
+      onClick={() => console.log('Clicked!')}
+    >
+      Submit
+    </Button>
+  );
 }
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Props
+
+```js
+
+Prop	    Type	                         Default	   Description
+
+align	    'left' | 'center' | 'right'	    'center'	   Position of the button
+size	    'small' | 'large' | 'full'	    'small'	       Size of the button
+color	    'blue' | 'red' | 'white'	    'blue'	       Background color
+outline	    'primary' | 'default'	        'default'	   Border style
+onClick	    function	                    undefined	   Click handler
+```
+

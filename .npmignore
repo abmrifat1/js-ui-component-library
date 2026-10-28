@@ -1,0 +1,11 @@
+src/
+node_modules/
+.github/
+.gitignore
+vite.config.ts
+tsconfig.json
+tsconfig.node.json
+App.tsx
+main.tsx
+index.html
+*.log
