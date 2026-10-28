@@ -32,14 +32,11 @@ function App() {
 
 ## Props
 
-```js
-
-Prop	    Type	                         Default	   Description
-
-align	    'left' | 'center' | 'right'	    'center'	   Position of the button
-size	    'small' | 'large' | 'full'	    'small'	       Size of the button
-color	    'blue' | 'red' | 'white'	    'blue'	       Background color
-outline	    'primary' | 'default'	        'default'	   Border style
-onClick	    function	                    undefined	   Click handler
-```
-
+| Prop             | Type                        | Default      |  Description             |
+| ---------------- | --------------------------- | ------------ | ------------------------ |
+| `align`          | 'left', 'center', 'right'	 | 'center'     | Position of the button   |
+| `size`           | 'small', 'large', 'full'	   | 'small'      | Size of the button       |
+| `color`          | 'blue', 'red', 'white'	     | 'blue'	      | Background color         |
+| `outline`        | 'primary', 'default'	       | 'default'	  | Border style             |
+| `onClick`        | function	                   | undefined	   | Click handler           |
+---
